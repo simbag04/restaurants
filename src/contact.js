@@ -1,6 +1,7 @@
 function createLocation(location, address)
 {
     let card = document.createElement('div');
+    card.classList.add('location-card');
 
     let title = document.createElement('h4');
     title.textContent = location;
@@ -35,10 +36,12 @@ function createPage()
     let contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
 
+
     let h1 = document.createElement('h1');
     h1.textContent = "Locations";
 
     let locations = document.createElement('div');
+    locations.classList.add('locations');
 
     locations.appendChild(createLocation(
         "Crossroads Bellevue", "15600 NE 8th St K-4 Bellevue, WA 98008 (425) 747-0557"

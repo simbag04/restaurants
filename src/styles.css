@@ -1,0 +1,109 @@
+:root
+{
+    --header: #B2B1CF;
+    --background: #E1F2FE;
+    --other: #98D2EB;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+.nav-bar
+{
+    background-color: var(--header);
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.nav-bar p
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-bar .right 
+{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    flex-grow: 1;
+}
+
+#content
+{
+    padding: 40px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home
+{
+    text-align: center;
+    background-color: var(--other);
+    padding: 30px;
+}
+
+img
+{
+    width: 400px;
+    height: auto;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--background);
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+.menu-item
+{
+    background-color: var(--other);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu-item p 
+{
+    padding: 0px;
+    text-align: center;
+}
+
+.location-card
+{
+    background-color: var(--other);
+    padding: 20px;
+}
+
+.locations
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menus
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.home, .location-card, .menu-item
+{
+    border-radius: 10px;
+}

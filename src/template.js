@@ -3,6 +3,9 @@ function loadPage()
     let contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
 
+    let div = document.createElement("div");
+    div.classList.add('home');
+
     let h1 = document.createElement("h1");
     h1.textContent = "Welcome to The French Bakery!";
 
@@ -12,9 +15,11 @@ function loadPage()
     let p = document.createElement("p");
     p.textContent = "The French Bakery is a cozy cafe for families to enjoy coffee and pastries.";
 
-    contentDiv.appendChild(h1);
-    contentDiv.appendChild(img);
-    contentDiv.appendChild(p);
+    div.appendChild(h1);
+    div.appendChild(img);
+    div.appendChild(p);
+
+    contentDiv.appendChild(div);
 }
 
 export {loadPage};

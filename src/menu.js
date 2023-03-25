@@ -3,6 +3,8 @@ function addItem(src, name, description)
     let menuItem = document.createElement('div');
     menuItem.classList.add("menu-item");
 
+    let left = document.createElement('div');
+
     let img = new Image();
     img.src = src;
 
@@ -12,8 +14,8 @@ function addItem(src, name, description)
     let descrip = document.createElement('p');
     descrip.textContent = description;
 
-    menuItem.appendChild(img);
     menuItem.appendChild(itemName);
+    menuItem.appendChild(img);
     menuItem.appendChild(descrip);
 
     return menuItem;
@@ -28,6 +30,7 @@ function createPage()
     h1.textContent = "Menu";
 
     let items = document.createElement('div');
+    items.classList.add('menus');
 
     items.appendChild(addItem
         ('../src/images/fresh-strawberry.jpeg', 
