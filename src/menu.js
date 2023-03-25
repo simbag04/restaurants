@@ -1,9 +1,11 @@
+import Strawberry from './images/fresh-strawberry.jpeg';
+import Chocolate from './images/dark-chocolate.jpeg';
+import Tiramisu from './images/tiramisu-cake.jpg';
+
 function addItem(src, name, description)
 {
     let menuItem = document.createElement('div');
     menuItem.classList.add("menu-item");
-
-    let left = document.createElement('div');
 
     let img = new Image();
     img.src = src;
@@ -33,17 +35,17 @@ function createPage()
     items.classList.add('menus');
 
     items.appendChild(addItem
-        ('../src/images/fresh-strawberry.jpeg', 
+        (Strawberry, 
         'Fresh Strawberry Cake', 
         "MOIST VANILLA CAKE LAYERED WITH FRESH STRAWBERRIES, HOUSE MADE WHIPPED CREAM & DECORATED WITH SLIVERED ALMONDS"));
 
     items.appendChild(addItem
-        ('../src/images/dark-chocolate.jpeg', 
+        (Chocolate, 
         'Dark Chocolate Mousse', 
         "DENSE CHOCOLATE CAKE, DARK CHOCOLATE CREAM TOPPED WITH WHIPPED CREAM & CHOCOLATE PIECES."));
 
     items.appendChild(addItem
-        ('../src/images/tiramisu-cake.jpg', 
+        (Tiramisu, 
         'Tiramisu', 
         "DARK CHOCOLATE CAKE, LAYERED WITH COFFEE CREAM. DECORATED WITH COCOA NIBS, WHIPPED CREAM AND CANDIED ESPRESSO BEANS."));
 
